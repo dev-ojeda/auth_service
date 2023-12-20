@@ -1,5 +1,5 @@
 use auth_service::Credentials;
-use auth_service::user::user::User;
+
 pub fn main()
 {
     let cred: Credentials = Credentials{
@@ -7,8 +7,8 @@ pub fn main()
         password: String::from("test")
     };
 
-    let objUsuario = auth_service::login(cred);
+    let obj_usuario = auth_service::login(cred);
 
-    println!("USER: {}.",objUsuario.user());
-    println!("PASS: {}.",objUsuario.pass());
+    println!("USER: {}.",obj_usuario.user());
+    println!("PASS: {}.",obj_usuario.pass());
 }
